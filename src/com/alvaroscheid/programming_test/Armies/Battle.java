@@ -8,8 +8,21 @@ package com.alvaroscheid.programming_test.Armies;
  *
  */
 public class Battle {
-	/*
-	 * alvaro-scheid - May 6, 2019
-	 * 
-	 */
+
+	private Army attack;
+	private Army defense;
+
+	public Battle(Army attack, Army defense) {
+		this.attack = attack;
+		this.defense = defense;
+	}
+
+	public void executeBattle() {
+		int countAttack = attack.getArchers().size() + attack.getCavalry().size() + attack.getWarriors().size();
+		int countDef = defense.getArchers().size() + defense.getCavalry().size() + defense.getWarriors().size();
+
+		while (countAttack != 0 || countDef != 0) {
+
+		}
+	}
 }
